@@ -1,0 +1,9 @@
+<div class="full-width">
+	<mat-form-field class="full-width">
+		<mat-label *ngIf="label?.length">{{ label }}</mat-label>
+		<input matInput [placeholder]="placeholder" [formControl]="valueControl" [type]="type">
+		<mat-hint *ngIf="hint?.length">{{ hint }}</mat-hint>
+	</mat-form-field>
+
+	<ng-content select="[icon]"></ng-content>
+</div>
